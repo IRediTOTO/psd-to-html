@@ -1,0 +1,24 @@
+header .container-fluid {
+    background: rgba(73, 84, 91, 0.84);
+}
+.services{
+	background:#4bcaff;
+	padding:6% 0;
+}
+
+.coffee{
+    background: url(./img/img-sprite.png)no-repeat -3px -7px;
+    width: 50px;
+    height: 60px;
+    display: inline-block;
+}
+.services hr, .portfolio1 hr{
+    border-top: 3px solid white !important;
+    width: 66px;
+    position: absolute;
+    margin-top: 37px;
+}
+.portfolio1 hr{border-color: black !important;}
+.portfolio1 {
+    padding: 6% 0;
+}
