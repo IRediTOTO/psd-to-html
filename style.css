@@ -18,7 +18,10 @@ header .container-fluid {
     position: absolute;
     margin-top: 37px;
 }
-.portfolio1 hr{border-color: black !important;}
-.portfolio1 {
+.portfolio hr{border-color: black !important;width: 66px;}
+.portfolio {
     padding: 6% 0;
+}
+.images-grid{
+    
 }
