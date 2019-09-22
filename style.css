@@ -1,28 +1,32 @@
 header .container-fluid {
     background: rgba(73, 84, 91, 0.84);
 }
-.services{
-	background:#4bcaff;
-	padding:6% 0;
+
+.services,
+.portfolio,
+.features,
+.john,
+.twitter,
+.testimonials,
+.contact {
+    background: #4bcaff;
+    padding: 6% 0;
 }
 
-.coffee{
+.features {
+    background: #515f67;
+}
+
+.coffee {
     background: url(./img/img-sprite.png)no-repeat -3px -7px;
     width: 50px;
     height: 60px;
     display: inline-block;
 }
-.services hr, .portfolio1 hr{
-    border-top: 3px solid white !important;
-    width: 66px;
-    position: absolute;
-    margin-top: 37px;
-}
-.portfolio hr{border-color: black !important;width: 66px;    border-color: black !important;
-    width: 66px;
-    margin-left: 0;
-    border-top: 3px solid red;
-}
+
+
+
+
 .portfolio-bt a {
     background: #ff000000;
     color: black;
@@ -32,9 +36,10 @@ header .container-fluid {
 }
 
 .portfolio {
-    padding: 6% 0;
+    background: white;
 }
-.hovereffect .overlay{
+
+.hovereffect .overlay {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -43,12 +48,14 @@ header .container-fluid {
     left: 0;
     visibility: hidden;
 }
-.hovereffect:hover .overlay{
+
+.hovereffect:hover .overlay {
     background: rgba(0, 0, 0, 0.3);
     visibility: visible;
-    
+
 }
-.hovereffect{
+
+.hovereffect {
     width: 100%;
     height: 100%;
     position: relative;
@@ -57,35 +64,128 @@ header .container-fluid {
     text-align: center;
 
 }
+
 .hovereffect img {
-    display:block;
-    position:relative;
-    -webkit-transition:all .4s linear;
-    transition:all .4s linear;
-    }
-    .hovereffect:hover img {
-        -ms-transform:scale(1.2);
-        -webkit-transform:scale(1.2);
-        transform:scale(1.2);
-        }
-        .hovereffect h2 {
-            text-transform:uppercase;
-            color:#fff;
-            text-align:center;
-            position:relative;
-            font-size:17px;
-            background:rgba(0,0,0,0.6);
-            -webkit-transform:translatey(-100px);
-            -ms-transform:translatey(-100px);
-            transform:translatey(-100px);
-            -webkit-transition:all .2s ease-in-out;
-            transition:all .2s ease-in-out;
-            padding:10px;
-            }
-            .hovereffect:hover h2,.hovereffect:hover a.info {
-                opacity:1;
-                filter:alpha(opacity=100);
-                -ms-transform:translatey(0);
-                -webkit-transform:translatey(0);
-                transform:translatey(0);
-                }
+    display: block;
+    position: relative;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+}
+
+.hovereffect:hover img {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(-100px);
+    -ms-transform: translatey(-100px);
+    transform: translatey(-100px);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    padding: 10px;
+}
+
+.hovereffect:hover h2,
+.hovereffect:hover a.info {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-transform: translatey(0);
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+}
+
+.features .btn.btn-primary {
+    background: #ff000000;
+    padding: 10px 25px;
+    border: 2px solid white !important;
+}
+
+.hr-custom {
+    border: 1px solid white;
+    width: 66px;
+    margin-left: 0;
+}
+
+.portfolio .hr-custom,
+.testimonials .hr-custom {
+    border-color: black;
+}
+
+.john {
+    background: url("./img/camera_lense_0.jpeg") !important;
+
+}
+
+.list-social-icon svg {
+    display: block;
+}
+
+.testimonials {
+    background: white !important;
+}
+
+.contact {
+    position: relative;
+    background: none;
+
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   filter:blur(8px);
+    background: url("./img/new-coffe.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.testimonials,
+.john {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.contact .address p{
+    margin-bottom: 0;
+}
+.contact input,.contact textarea{
+    padding: 20px;
+    width: 85%;
+    color: #FFF;
+    font-size: 0.85em;
+    border: 2px solid #fff;
+    background: none;
+    outline: none;
+    display: block;
+}
+.contact input:focus,.contact textarea:focus{
+    background: none;
+}
+.contact button{
+    background: none;
+    border-color: white;
+}
+footer{
+    background-color: #353f47;
+
+}
+footer a,footer div{
+    color: #515f67;
+    text-decoration: none;
+}
+footer a:hover{
+    color: white;text-decoration: none;
+}
